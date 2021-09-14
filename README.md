@@ -121,7 +121,7 @@ Start the server
 
 or
 
-## [Polygon Project Live](<[Polygon](https://shiyanshirani-polygon.herokuapp.com/)>) - Heroku
+## [Polygon Project Live](https://shiyanshirani-polygon.herokuapp.com/) - Heroku
 
 I was unable to deploy it on AWS because of banking complications.
 
