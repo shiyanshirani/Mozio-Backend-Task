@@ -9,7 +9,6 @@ class ProviderSerializer(serializers.ModelSerializer):
 
 
 class PolygonAreaSerializer(serializers.ModelSerializer):
-    provider = serializers.CharField(source='provider_name.name')
     class Meta:
         model = PolygonArea
-        fields = ['name', 'price', 'geojson', 'provider']
+        fields = "__all__"
