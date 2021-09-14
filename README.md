@@ -121,13 +121,13 @@ Start the server
 
 or
 
-## [Polygon Project Live](https://shiyanshirani-polygon.herokuapp.com/) - Heroku
+## [Polygon Project Live](https://shiyanshirani-polygon.herokuapp.com/provider) - Heroku
 
 I was unable to deploy it on AWS because of banking complications.
 
 ## Authors
 
-- [@shiyanshirani](https://www.github.com/octokatherine)
+- [@shiyanshirani](https://www.github.com/shiyanshirani)
 
 ## License
 
