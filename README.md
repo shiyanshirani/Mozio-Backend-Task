@@ -82,6 +82,7 @@ Each vertices of the polygon is sent to the `api` in an nested list type of coor
 To `query` regarding a particular point(latitude, longitude) use `GET` method on GeoPolygon API reference to get all the service provider's information.
 
 ![Tokyo](assets/Tokyo.png)
+
 Reference - [geojson.io](https://geojson.io/#map=3/30.07/51.33)
 
 ## Run Locally
