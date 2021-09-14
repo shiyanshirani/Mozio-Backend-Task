@@ -21,11 +21,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = os.getenv('SECRET_KEY')
-SECRET_KEY="django-insecure-=6mc2c+tkd7h2i1)fldr$8d#b(ef7ns%5y_w)e#p#dle6fx3ix"
+SECRET_KEY = "django-insecure-=6mc2c+tkd7h2i1)fldr$8d#b(ef7ns%5y_w)e#p#dle6fx3ix"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shiyanshirani-polygon.herokuapp.com', '127.0.0.1', '0.0.0.0', '0.0.0.0:5000']
+ALLOWED_HOSTS = [
+    "shiyanshirani-polygon.herokuapp.com",
+    "127.0.0.1",
+    "0.0.0.0",
+    "0.0.0.0:5000",
+]
 
 
 # Application definition
@@ -80,10 +85,10 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "de6p2govf1uif8",
-        "HOST": 'ec2-52-7-159-155.compute-1.amazonaws.com',
+        "HOST": "ec2-52-7-159-155.compute-1.amazonaws.com",
         "PORT": 5432,
-        "USER": 'uzlcwbwmzejcxi',
-        "PASSWORD": 'b8d80282ff16f9726f6211c5d6e84530335abe47460558c82fac0d092cb6c3db'
+        "USER": "uzlcwbwmzejcxi",
+        "PASSWORD": "b8d80282ff16f9726f6211c5d6e84530335abe47460558c82fac0d092cb6c3db",
     }
 }
 
@@ -124,7 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

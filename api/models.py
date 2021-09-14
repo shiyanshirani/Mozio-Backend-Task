@@ -34,7 +34,9 @@ class Provider(models.Model):
 
 
 class PolygonArea(models.Model):
-    provider_name = models.ForeignKey(Provider, on_delete=models.CASCADE, related_name='provider')
+    provider_name = models.ForeignKey(
+        Provider, on_delete=models.CASCADE, related_name="provider"
+    )
     name = models.CharField(max_length=256)
     price = models.DecimalField(max_digits=12, decimal_places=8, default=0.0000)
     geojson = models.TextField()

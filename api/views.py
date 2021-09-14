@@ -7,7 +7,6 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
 
-
 # Create your views here.
 
 
@@ -30,17 +29,18 @@ class PolygonAreadetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = PolygonArea.objects.all()
     serializer_class = PolygonAreaSerializer
 
-@api_view(['GET'])
+
+@api_view(["GET"])
 def get_polygon(request):
     """
     Fetching latitude and longitude
     """
-    lat = request.GET.get('lat', None)
-    long = request.GET.get('long', None)
+    lat = request.GET.get("lat", None)
+    long = request.GET.get("long", None)
 
     if lat is None or long is None:
         return HttpResponse("Invalid lat & long")
-    
+
     point = Point(float(lat), float(long))
     RESULT_POLYGON = []
 
@@ -52,9 +52,9 @@ def get_polygon(request):
         polygon = Polygon(eval_coordinates)
         if polygon.contains(point):
             RESULT_POLYGON.append(area)
-    
+
     if len(RESULT_POLYGON) == 0:
         return HttpResponse("No service provider registered in the polygon area.")
-    
+
     serializer = PolygonAreaSerializer(RESULT_POLYGON, many=True)
     return Response(serializer.data)

@@ -6,5 +6,5 @@ urlpatterns = [
     path("provider/<int:pk>/", Providerdetail.as_view()),
     path("polygon/", PolygonArealist.as_view()),
     path("polygon/<int:pk>/", PolygonAreadetail.as_view()),
-    path("geopolygon/", get_polygon)
+    path("geopolygon/", get_polygon),
 ]
