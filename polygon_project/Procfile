@@ -1,1 +1,0 @@
-web: gunicorn polygon_project.wsgi
