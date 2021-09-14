@@ -123,6 +123,8 @@ or
 
 ## [Polygon Project Live](<[Polygon](https://shiyanshirani-polygon.herokuapp.com/)>) - Heroku
 
+I was unable to deploy it on AWS because of banking complications.
+
 ## Authors
 
 - [@shiyanshirani](https://www.github.com/octokatherine)
