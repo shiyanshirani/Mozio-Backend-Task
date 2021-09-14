@@ -60,13 +60,29 @@ Finally, deploy your code to a hosting service of your choice. Mozio is built en
 
 | Parameter   | Type    | Description                                           |
 | :---------- | :------ | :---------------------------------------------------- |
-| `latitude`  | `float` | **Required**. To check serivce provider in that area. |
+| `latitude`  | `float` | **eg**. To check serivce provider in that area.       |
 | `longitude` | `float` | **Required**. To check service provider in that area. |
 
-## Images
+Reference
 
-Reference - [geojson.io](https://geojson.io/#map=3/30.07/51.33)
+> Tokyo's longitude and latitude - [[135.53009033203125, 35.40024478679507], [135.38726806640625, 35.16258214808429], [135.8624267578125, 35.24113278166642], [135.53009033203125, 35.40024478679507]]
+> Point in Tokyo's Polygon - latitude=135.560302734375 & long=35.28374272801905
+
+> Kyoto's longitude and latitude - [[139.625244140625, 35.862343734896484], [139.482421875, 35.46961797120201], [140.020751953125, 35.7286770448517], [139.625244140625, 35.862343734896484]]
+> Point in Kyoto's Polygon - latitude=139.6307373046875 & long=35.661759419295045
+
+## Output
+
+This Django API will retrieve all the service providers located in that area (polygon) from the database.
+
+## Explaination
+
+Each vertices of the polygon is sent to the `api` in an nested list type of coordinate which is then stored in the database as a Polygon.
+
+To `query` regarding a particular point(latitude, longitude) use `GET` method on GeoPolygon API reference to get all the service provider's information.
+
 ![Tokyo](assets/tokyo.png)
+Reference - [geojson.io](https://geojson.io/#map=3/30.07/51.33)
 
 ## Run Locally
 
