@@ -63,6 +63,11 @@ Finally, deploy your code to a hosting service of your choice. Mozio is built en
 | `latitude`  | `float` | **Required**. To check serivce provider in that area. |
 | `longitude` | `float` | **Required**. To check service provider in that area. |
 
+## Images
+
+Reference - [geojson.io](https://geojson.io/#map=3/30.07/51.33)
+![Tokyo](assets/tokyo.png)
+
 ## Run Locally
 
 Clone the project
@@ -99,7 +104,7 @@ Start the server
 
 or
 
-## [Polygon Project Live](<[GitHub](http://github.com)>) - Heroku
+## [Polygon Project Live](<[Polygon](https://shiyanshirani-polygon.herokuapp.com/)>) - Heroku
 
 ## Authors
 
